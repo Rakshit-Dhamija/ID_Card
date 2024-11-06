@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ---------GENERAL---------- */
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            background-image: url(img/background.png);
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: large;
+            color: white;
+
+            border-radius: 10px;
+        }
+
+        img {
+            height: 150px;
+        }
+
+        /* ---------ARC LOGO    ---------- */
+        .top img {
+            height: 90px;
+            padding-top: 10px;
+        }
+
+
+        /* ---------MEMBER INFORMATION---------- */
+        /* container */
+        .mid {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 0 10px;
+        }
+
+        #img img {
+            padding: 2.5px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* written info container */
+        #info {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+
+        /* written info individual elements */
+        #info>div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* member image */
+        #img {
+            background-color: white;
+            border-radius: 7.5px;
+        }
+
+
+
+        /* ---------SIGNATURES---------- */
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 25px 10px 25px;
+        }
+
+        .bottom > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: smaller;
+            font-weight: 100;
+        }
+
+        .bottom img {
+            height: 50px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="top">
+            <img src="img/arc logo.png" alt="">
+        </div>
+
+        <div class="mid">
+            <div id="info">
+                <div id="member">
+                    <div>Membership No :</div>
+                    <div>102303585</div>
+                </div>
+                <div id="name">
+                    <div>Name :</div>
+                    <div>John Cena</div>
+                </div>
+                <div id="year">
+                    <div>Year :</div>
+                    <div>3rd</div>
+                </div>
+                <div id="degree">
+                    <div>Degree :</div>
+                    <div>Chemical</div>
+                </div>
+                <div id="dob">
+                    <div>Date Of Birth :</div>
+                    <div>23 April 1977</div>
+                </div>
+            </div>
+            <div id="img">
+                <div>
+                    <img src="img/John-Cena.jpg" alt="">
+                </div>
+            </div>
+            <div id="barcode">
+                <img src="img/Barcode.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div>
+                <img src="img/sign3.jpg" alt="">
+                <p>Head Alumni Engagement</p>
+            </div>
+            <div>
+                <img src="img/sign3.jpg" alt="">
+                <p>ARC President</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
